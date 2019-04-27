@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Try Crackle</title>
+  <meta name="description" content="Live editor for the Crackle template language">
+  <meta name="author" content="Jim Fitzpatrick">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">try <a href="https://github.com/jimf/crackle" target="_blank" rel="noopener noreferrer">Crackle</a></header>
+  <main class="content">
+    <div class="inputs">
+      <div class="template">
+        <label for="template" class="template__label label">Template</label>
+        <textarea id="template"></textarea>
+      </div>
+      <div class="context">
+        <label for="context" class="context__label label">Context (JSON)</label>
+        <textarea id="context"></textarea>
+        <button type="button" data-action="tidy" class="tidy-button">Tidy</button>
+      </div>
+    </div>
+    <div class="output">
+      <pre class="output__text"></pre>
+    </div>
+  </main>
+  <script async src="index.js"></script>
+</body>
+</html>
