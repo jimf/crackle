@@ -65,6 +65,11 @@ html {
   position: relative;
 }
 
+.output {
+  max-width: 100%;
+  overflow: scroll;
+}
+
 .output__text {
   font-family: monospace;
 }
@@ -80,6 +85,7 @@ html {
 }
 
 textarea {
+  background: #fafafa;
   border: 1px solid #666;
   box-sizing: border-box;
   color: #333;
@@ -104,4 +110,16 @@ textarea {
   position: absolute;
   right: 0;
   top: 36px;
+}
+
+@media (max-width: 690px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  #template,
+  #context {
+    border-left: none;
+    border-right: none;
+  }
 }
